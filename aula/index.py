@@ -37,9 +37,9 @@ def lista():
 def cadastrar_produto():
      return render_template('cadastrar.html')
 
-@app.route('/adicionar',methods=['POST',])
+@app.route('/adicionar', methods=['POST',])
 def adicionar_produto():
-     nome_prod = request.form['txtName']
+     nome_prod = request.form['txtNome']
      marca_prod = request.form['txtMarca']
      preco_prod = request.form['txtPreco']
 
